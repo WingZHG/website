@@ -1,0 +1,50 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+ function playSound(soundfile) {
+ document.getElementById("dummy").innerHTML=
+ "<embed src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+ }
+ </script>
+ <style>
+.test{
+opacity: 0;
+z-index:1;
+position: absolute;
+top: 0px;
+left: 0px;
+width:450px;
+font-size: 85vh;
+overflow: hidden;
+}
+
+.vid{
+z-index:-1;
+top: 0px;
+left: 0px;
+overflow: hidden;
+}
+
+.cont{
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+</style>
+</head>
+
+<body height="100%">
+<div class="cont">
+<span id="dummy"></span>
+<div class="test">
+<a href="#" onclick="playSound('./alarm.mp3');">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</a>
+</div>
+<div class="vid">
+<video muted loop autoplay height="100%">
+  <source src="alarm.webm" type="video/mp4">
+</video>
+</div>
+</div>
+<body>
+
+</html>
